@@ -305,22 +305,10 @@ class GameWindow:
         self.root.title("DSA:Lab 2 -- Breakout Game")
         self.root.geometry('640x480')
 
-        self.canvas = Canvas(self.root, width = 640, height = 480)
-        self.canvas.grid(column=0, row=0)
-        self.canvas.after(1, self.OneSecTimer)
-        
-        self.canvas.focus_set()        
-        self.game = Game(self.canvas)
-        self.root.after(1, self.GameLoop)
-        self.root.mainloop()
-    
+        self.canvas = Canvas(self.root, wi
     def KeyPressed(self, key):
         if key.name == 'left':
-            self.game.LeftKeyPressed()
-        if key.name == 'right':
-            self.game.RightKeyPressed()
-        if key==Key.esc:
-            self.listener.stop()
+            self.game.LeftKeyPressed
             self.root.destroy()
             time.sleep(3)
             raise SystemExit(0)
