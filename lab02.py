@@ -325,17 +325,6 @@ class GameWindow:
         self.game.Update()
         self.game.Draw()
         self.root.after(1000//60, self.GameLoop)
-
-    def OneSecTimer(self):
-        #print("One second Tick")
-        self.canvas.after(1000, self.OneSecTimer)
-        
-#-----------------------------------
-
-if __name__ == '__main__':
-    game = GameWindow()
-
-
 #-----------------------------------
 
 
