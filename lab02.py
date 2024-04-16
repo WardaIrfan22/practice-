@@ -327,6 +327,7 @@ class GameWindow:
         self.root.after(1000//60, self.GameLoop)
 #-----------------------------------
 
+<<<<<<< HEAD
 #"my name is warda and this is subbranch code"
 #whats the diff
 ```python  
@@ -341,3 +342,13 @@ def subtract(a,b):
     2. second item 
     #nsme warda 
     
+=======
+if __name__ == '__main__':
+    game = GameWindow()
+
+
+#-----------------------------------
+
+
+#this is subbranch
+>>>>>>> subbranch
